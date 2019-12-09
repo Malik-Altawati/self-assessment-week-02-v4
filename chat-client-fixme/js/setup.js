@@ -120,4 +120,13 @@ var postData = function(message, username) {
       console.log(data);
     }
   });
+
 };
+
+
+  $('#submitButton').on('click',function(){
+    var username = $('#userName').val();
+    var message =  $("#userInput").val()
+    postData(message, username)
+  })
+ 
